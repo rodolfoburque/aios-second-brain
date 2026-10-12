@@ -63,7 +63,7 @@ FOUR HONESTIES, because a metric that oversells itself turns into theater:
      search depends on someone remembering. Counting 2+ hops would make the rate look
      great in a vault where nobody finds anything. Counting ONLY the folder would be the
      opposite mistake: it would reward moving files to `knowledge/`, which blows the
-     context ceiling and is exactly what /consolidate forbids. 1 hop is the only cut
+     context ceiling and is exactly what consolidation forbids. 1 hop is the only cut
      that rewards the right action, the pointer.
   d. This does NOT measure use. An edge only becomes memory when it is traveled (Hebb),
      and what this script counts is anatomy, not firing. Measuring firing requires

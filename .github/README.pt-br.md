@@ -31,10 +31,10 @@ As instruções que a IA segue estão no [README em inglês](../README.md), no b
 
 - **Memória entre sessões:** um hook entrega sua identidade e a última sessão a cada conversa nova, e escreve a nota do dia quando a sessão termina.
 - **Cada coisa no lugar:** "processa isso pro vault" com um link, arquivo ou texto. Ele lê, destila e guarda a nota na pasta certa, ligada ao que já existe.
-- **Verificação:** scripts conferem links, frontmatter, nota órfã e as próprias skills.
+- **Verificação:** scripts conferem links, frontmatter e nota órfã.
 - **Trava de segredo:** um hook barra commit com senha ou token.
 
-São 5 comandos, 10 skills, 5 agentes e os hooks. A lista completa fica em `AIOS/index.md` depois de instalar.
+São 4 comandos, a skill de ingestão e os hooks. A lista completa fica em `AIOS/index.md` depois de instalar.
 
 ## Requisitos
 

@@ -1,6 +1,6 @@
 ---
 name: ingest
-description: Ingest a URL, pasted content, or file into the vault. Use when the user drops a reference mid-session and wants it read, distilled, and routed to the right folder with wikilinks, or says 'read this', 'process this', 'add this to the vault', 'process this into the vault', 'clear the inbox'. Do not use it to read a source against a specific problem (that is strategic-reading) or to curate a batch of transcripts (that is curate-transcripts).
+description: Ingest a URL, pasted content, or file into the vault. Use when the user drops a reference mid-session and wants it read, distilled, and routed to the right folder with wikilinks, or says 'read this', 'process this', 'add this to the vault', 'process this into the vault', 'clear the inbox'. Do not use it to read a source against a specific problem (the strategic-reading skill, in the Second Brain Pro pack) or to curate a batch of transcripts (the curate-transcripts skill, same pack).
 type: skill
 skill: ingest
 status: active
@@ -55,8 +55,8 @@ Every path this skill touches. Read live on every run, never from a copy.
 | New content inside `02 Context/` | The vault owner. Ingest only adds the wikilink, it never rewrites context |
 | `02 Context/me.md` | Only an explicit correction from the vault owner, at the moment they give it |
 | A rule, map or guardrail in `AIOS/` | The vault owner; a skill correction goes IN the skill (rule 5 of [[operating-rules]]) |
-| A numbered log in `logs/` | `eiirp`, or whoever did the substantive work |
-| A skill reference card in `04 Resources/tools/` | The install flow and `check-skills.py` |
+| A numbered log in `logs/` | Whoever did the substantive work |
+| A skill reference card in `04 Resources/tools/` | The install flow of the skill |
 | Deleting a vault note | Nothing. Only a `00 Inbox/` file that has already been routed leaves the Inbox |
 | Overwriting a note that **contradicts** the new source | No one. A contradiction is flagged explicitly, never resolved silently |
 

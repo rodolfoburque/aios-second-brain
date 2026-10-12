@@ -60,9 +60,8 @@ The sentence needs the link. "Build my second brain" alone is not enough.
 aios-second-brain/
 ├── CLAUDE.md                 the rules the AI follows, each with its reason
 ├── .claude/
-│   ├── commands/             5 commands: setup, assistant, organize, import-context, audit-skills
-│   ├── skills/               10 skills for capturing, distilling and maintaining knowledge
-│   ├── agents/               5 agents with a defined job
+│   ├── commands/             4 commands: setup, assistant, organize, import-context
+│   ├── skills/               ingest: reads a link, file or text and files it in the right place
 │   └── hooks/                session memory, secret blocking, and a self-test
 ├── AIOS/                     maps the AI reads on demand: routing, verification, guardrails
 ├── 00 Inbox/                 capture
@@ -126,7 +125,7 @@ Proven on Windows 11. macOS and Linux use the default settings file; if somethin
 
 ## What's next
 
-- **AIOS Tools and AIOS Skills:** packs that run on top of this vault, for content, video, pages, prospecting and offers. [vaultbubbles.org/aios-tools](https://vaultbubbles.org/aios-tools)
+- **AIOS Tools:** paid packs that run on top of this vault. Second Brain Pro makes the vault improve on its own (consolidation, curation, lint, session filing); AI Team adds agents with a defined role; the others cover offer, pages, content and prospecting. [vaultbubbles.org/aios-tools](https://vaultbubbles.org/aios-tools)
 - **Want it installed in your company's operation?** [bvrx.studio/ai-operations](https://bvrx.studio/ai-operations)
 
 ## License

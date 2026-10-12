@@ -85,7 +85,7 @@ Knowledge about the outside world + internal decisions.
 ├── decisions/             : Important decisions with reasoning (YYYY-MM-DD-{slug}.md)
 ├── competitors/           : Competitor analysis (1 file per competitor)
 ├── market/                : Market insights by topic
-├── research/              : Research (agent `team-research`)
+├── research/              : Research
 └── archive/               : Archive for this folder's content
 ```
 

@@ -69,7 +69,7 @@ This command changes **where a note lives and how it connects**, never what it s
 | An invented destination | Nobody. Without certainty, ask in Phase 2 or send it to `00 Inbox/` |
 | Deleting anything | Nothing. Everything that leaves goes to `05 Archives/` |
 | Translating content, a path or a frontmatter key | Nobody. The language of the conversation changes; the language of the file does not |
-| A numbered log in `logs/` | The `eiirp` skill, or whoever did the work |
+| A numbered log in `logs/` | Whoever did the work |
 
 If execution runs into one of these lines, say so in the Phase 5 summary and leave the file alone. A stub written by the wrong skill is worse than an honest gap.
 

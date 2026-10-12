@@ -39,7 +39,7 @@ Each rule carries its reason. A new rule enters here only when a real mistake ju
 - A secret or token never goes in a versioned file or in a vault note. <!-- a hook blocks the commit, but the rule comes before the hook -->
 - Nothing is declared done without running the verification in `AIOS/verification.md` and showing the output; configuration state does not prove that something works. <!-- "active" on a panel is not the same as working -->
 - More than 3 steps: show the numbered steps, wait for approval, execute one at a time. <!-- the odds of getting it right drop with every chained step that goes unchecked -->
-- End of a substantive session: the vault is better than it started, with outputs filed (`eiirp`), no new orphan note, and open loops named in `AIOS/open-loops.md`. <!-- knowledge that stays stuck in the chat is lost -->
+- End of a substantive session: the vault is better than it started, with outputs filed in the folder `AIOS/knowledge-routing.md` names, no new orphan note, and open loops named in `AIOS/open-loops.md`. <!-- knowledge that stays stuck in the chat is lost -->
 
 ## Structure, routing, commands
 

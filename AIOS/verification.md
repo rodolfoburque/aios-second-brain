@@ -65,7 +65,6 @@ What finally separated them:
 | Type of work | Done well (objective) | Done badly | Command/check that proves it |
 |---|---|---|---|
 | **Note in the vault** | frontmatter with `type`/`date`/`status`/`tags`; every wikilink resolves; no new orphan note | broken link, note with no incoming link, missing frontmatter, markdown link to an internal file | `python "04 Resources/tools/check-note.py" <file|folder>` → exit 0 |
-| **Skill card** | a single source of truth: an `installed` card is a pointer, a `library` card is the source itself; every executable has a card | a card going back to copying `SKILL.md`; a skill installed with no card; a pointer to a path that does not exist | `python "04 Resources/tools/check-skills.py"` → exit 0; when installing a new skill, `--catalog` to regenerate the index |
 | **Site / landing page** | build passes; the new route answers 200 locally; no type errors | "I pushed it and did not look"; the error only shows up on deploy | `npm run check && npm run build` at the project root; then `npm run preview` and open the route |
 | **Performance of a published page** | a number measured at a citable source, not an impression | "it got fast" | PSI API (`PSI_API_KEY`, host `pagespeedonline.googleapis.com`) or the `lighthouse` MCP → keep the 4 scores |
 | **Artifact / proposal for a client** | every piece of data has a cited public source; every link opens; positioning present (who you are, why the contact, the document as a demo) | a plausible number with no origin; a dead link in the material that goes to the prospect | check each claim against the saved source; `curl -sI <url>` on each external link → 200; the positioning comes from [[02 Context/me]] |
@@ -85,11 +84,6 @@ What finally separated them:
 The checker is `04 Resources/tools/check-note.py`. It has no opinion about content, only about what is mechanically verifiable: frontmatter, wikilink resolution, orphan notes and internal markdown links. **Run it before saying I filed something.** Exit 0 = passed; exit 1 = there are findings, and each finding comes with file and line.
 
 A new orphan is the most expensive failure because it **does not scream**: the note exists, the content is there, and the vault simply never reaches it again.
-
-### Skill card
-The checker is `04 Resources/tools/check-skills.py`, created on 2026-08-07 together with the pointer decision (the card points to the executable, never copies it). It compares the card line by line with the executable it declares: if they look alike again, the copy is back and it fails.
-
-The failure it exists to catch is not a broken link, it is **a card that looks right and guides wrong**. An old copy does not warn you that it is old. Run it when installing, promoting or renaming any skill, and `--catalog` in the same commit.
 
 ### Site and landing page
 `npm run check` (astro check) catches type and route errors that `build` sometimes swallows. Both, in this order. **Local preview before deploy** is a guardrail rule, not a verification rule ([[guardrails]]).

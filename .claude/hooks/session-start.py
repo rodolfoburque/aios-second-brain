@@ -198,7 +198,7 @@ add(
 # Once the graph reaches zero dead links, without measurement it drifts again in
 # silence. The temptation was to turn this into a pre-commit hook; that was
 # dropped for three reasons:
-#   - a forward link is LEGITIMATE here. vault-lint itself says to create a note
+#   - a forward link is LEGITIMATE here. the vault lint itself says to create a note
 #     after 3 mentions, so a dead link is a sign of a note to write, not an error.
 #     block-secret-on-commit can block because a secret has no legitimate case; a
 #     wikilink does.
@@ -250,8 +250,8 @@ try:
     if _lines:
         _cmd = chr(96) + 'python "04 Resources/tools/vault-metrics.py" --triage' + chr(96)
         add("--- Vault intelligence ---" + NL + NL.join(_lines) + NL
-            + "Consolidate an episode into a claim: " + chr(96) + "/consolidate" + chr(96)
-            + ". Pruning list: " + _cmd + "." + NL)
+            + "Pruning list: " + _cmd + ". Skills that act on these numbers (consolidate, vault lint, session filing) "
+            + "ship in the Second Brain Pro pack: https://vaultbubbles.org/aios-tools" + NL)
 except Exception:
     pass
 
