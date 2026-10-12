@@ -1,0 +1,39 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python -c \"import os,runpy; p=os.path.join(os.environ.get('CLAUDE_PROJECT_DIR') or '.', '.claude', 'hooks', 'block-kill-by-name.py'); os.path.isfile(p) and runpy.run_path(p, run_name='__main__')\""
+          },
+          {
+            "type": "command",
+            "command": "python -c \"import os,runpy; p=os.path.join(os.environ.get('CLAUDE_PROJECT_DIR') or '.', '.claude', 'hooks', 'block-secret-on-commit.py'); os.path.isfile(p) and runpy.run_path(p, run_name='__main__')\""
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python -c \"import os,runpy; p=os.path.join(os.environ.get('CLAUDE_PROJECT_DIR') or '.', '.claude', 'hooks', 'session-start.py'); os.path.isfile(p) and runpy.run_path(p, run_name='__main__')\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python -c \"import os,runpy; p=os.path.join(os.environ.get('CLAUDE_PROJECT_DIR') or '.', '.claude', 'hooks', 'session-capture.py'); os.path.isfile(p) and runpy.run_path(p, run_name='__main__')\""
+          }
+        ]
+      }
+    ]
+  }
+}
