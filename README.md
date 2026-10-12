@@ -41,6 +41,7 @@ The sentence needs the link. "Build my second brain" alone is not enough.
 >    - If the folder name itself has a space: **stop.** Ask for a folder without spaces, same instruction.
 >    - If the folder already has files that are not yours to overwrite: **stop** and ask the user to open Claude in an empty folder.
 > 2. **Clone into the current folder:** `git clone https://github.com/rodolfoburque/aios-second-brain.git .`
+>    - **If you already cloned into a subfolder to read this file** (for example `aios-second-brain/`): move everything out of it into the current folder, hidden entries included (`.git`, `.claude`, `.github`, `.gitignore`), then delete the empty subfolder. The vault must not stay nested: the user opened Claude in the folder where it belongs.
 > 3. **Detach the vault from this repository:** `git remote remove origin`. The vault will hold private notes and must never be able to push to the public template. Say you did this.
 > 4. **Detect the operating system from your own environment, without asking.** Do not assume macOS.
 >    - **macOS, Linux or WSL:** change nothing. `.claude/settings.json` calls `python3`.
