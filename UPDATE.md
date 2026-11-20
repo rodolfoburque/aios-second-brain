@@ -6,6 +6,8 @@ An installed vault is detached from this repository on purpose: it holds private
 Update my second brain with https://github.com/rodolfoburque/aios-second-brain/blob/main/UPDATE.md
 ```
 
+Claude reads this page, shows the plan and asks before changing anything: answer yes. It then asks permission to run `git` and `python` and to write inside `.claude/`: accept. When it finishes, close Claude Code and open it again in the same folder.
+
 > [!IMPORTANT]
 > **If you are the AI that received the sentence above, read this carefully.**
 >

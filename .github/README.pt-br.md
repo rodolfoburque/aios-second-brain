@@ -44,6 +44,8 @@ O vault instalado é desligado deste repositório, então correção não chega 
 Atualize o meu segundo cérebro com https://github.com/rodolfoburque/aios-second-brain/blob/main/UPDATE.md
 ```
 
+O Claude lê a página, mostra o plano e pergunta antes de mexer: responda sim. Depois ele pede permissão para rodar `git` e `python` e para gravar em `.claude/`: aceite. No fim, feche o Claude Code e abra de novo na mesma pasta.
+
 ## Requisitos
 
 Claude Code, Obsidian, Git e Python 3. Provado no Windows 11. No macOS e no Linux vale o arquivo de configuração padrão; se algo falhar, abra uma issue com a saída do `test-hooks.py`.
