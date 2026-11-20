@@ -56,7 +56,7 @@ This command changes **where a note lives and how it connects**, never what it s
 | Any moved note | The connecting wikilinks. Every note ends up with at least one inbound or outbound link | preserves the body |
 | `05 Archives/` | The redundancy, moved. Several on the same theme get a short `05 Archives/{theme}/README.md` | preserves the original |
 | `knowledge/index.md` | The routed notes, if the file exists | already exists |
-| `02 Context/me.md` | **Only** the routing rule the person corrected, at the moment they corrected it (rule 5 of [[operating-rules]]) | already exists |
+| `AIOS/conduct.md` | **Only** the routing rule the person corrected, one line, at the moment they corrected it (rule 5 of [[operating-rules]]) | already exists |
 
 ### Never writes
 
@@ -182,4 +182,4 @@ Short message, no fluff:
 - Never invent a destination. If you do not know, ask (Phase 2) or drop it in `00 Inbox`.
 - Never delete. Everything that leaves goes to `05 Archives`.
 - Never touch the system folders, README, CLAUDE or index.
-- If the user corrects a routing, save the rule in `02 Context/me.md` so the mistake does not repeat.
+- If the user corrects a routing, save the rule as one line in `AIOS/conduct.md`, which is loaded into every session, so the mistake does not repeat.

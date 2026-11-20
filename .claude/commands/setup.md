@@ -59,7 +59,7 @@ If an answer mentions a project or a line of work in progress, keep the name for
 
 ## Phase 4: save
 
-1. **`02 Context/me.md`:** fill in each field with the real answer, in the person's words. Change `date` to today's date and `status` to `active`. Skipped field: "not defined yet". Keep the file's sections and order; do not delete "Permanent corrections".
+1. **`02 Context/me.md`:** fill in each field with the real answer, in the person's words. Change `date` to today's date and `status` to `active`. Skipped field: "not defined yet". Keep the file's sections and order.
 2. **`AIOS/project-map.md`:** for each project mentioned, add a block in the format of the "Block template" in the file itself, and replace the "no project registered" notice. Do not create the folder in `03 Projects/` now: it is created at the project's first real piece of work.
 3. **`AIOS/tools.md`:** do not touch it. The tools from question 6 are the ones the person **uses**, not the ones the AI can reach; only what was connected and proven with a real read goes in there.
 4. **`AIOS/open-loops.md`:** one line per field left as "not defined yet" and per piece of data marked "(to confirm)", pointing to `[[me]]`.

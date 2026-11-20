@@ -292,6 +292,20 @@ def main():
         finally:
             note.restore()
 
+    # ---- corrections reach every session ----------------------------------
+    # SessionStart only injects the beginning of me.md. A correction stored there
+    # stops applying once the file grows; that is why it lives in AIOS/conduct.md,
+    # which CLAUDE.md imports whole.
+    claude_md = VAULT / "CLAUDE.md"
+    conduct = VAULT / "AIOS" / "conduct.md"
+    claude_text = claude_md.read_text(encoding="utf-8") if claude_md.exists() else ""
+    imports = any(l.strip() == "@AIOS/conduct.md" for l in claude_text.splitlines())
+    check(
+        "corrections reach every session: CLAUDE.md imports AIOS/conduct.md",
+        imports and conduct.exists(),
+        "import=" + str(imports) + ", file exists=" + str(conduct.exists()),
+    )
+
     # ---- scoreboard --------------------------------------------------------
     print("")
     passed = sum(1 for _, ok, _ in results if ok)

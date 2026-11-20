@@ -42,7 +42,7 @@ Every piece of information has a home. Route it here, never to a catch-all.
 | Unprocessed quick capture | `00 Inbox/` |
 | Finished or archived content | `05 Archives/` |
 | Knowledge domain (auto-loaded) | `knowledge/{domain}.md` |
-| Rules for the AI's behavior | `02 Context/me.md` (section "Permanent corrections") |
+| Rules for the AI's behavior | `AIOS/conduct.md`, one line per rule (loaded into every session) |
 
 ---
 

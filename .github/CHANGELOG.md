@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.1.1 (2026-11-20)
+
+Corrections reach every session again. **If you installed 1.1.0 or earlier, apply this fix: see [UPDATE.md](../UPDATE.md).**
+
+- Corrections were saved at the end of `02 Context/me.md`, and the session-start hook loads only the first 4,000 characters of that file. Once `me.md` grew past that, saved corrections stopped reaching new sessions, with no warning.
+- New `AIOS/conduct.md`: one line per correction, imported whole by `CLAUDE.md` (`@AIOS/conduct.md`). The correction rule in `CLAUDE.md`, rule 5 of `operating-rules.md`, `/assistant`, `/organize`, `/setup`, the `ingest` skill and the routing table now point to it.
+- `test-hooks.py` has one more case (20 in total): it fails if `CLAUDE.md` does not import `conduct.md` or the file is missing.
+- New `UPDATE.md`: one sentence to paste into Claude Code brings fixes into a vault that is already installed.
+
 ## 1.1.0 (2026-10-12)
 
 The base vault is now only what the second brain needs to run: session memory, routing, safety hooks, setup, the daily assistant, context import, organize, ingest and the note and link checkers.

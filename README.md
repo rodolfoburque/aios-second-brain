@@ -108,6 +108,16 @@ claude
 
 Open the same folder in Obsidian with "Open folder as vault".
 
+## Updating an installed vault
+
+An installed vault is detached from this repository, so fixes do not arrive by `git pull`. Open Claude Code inside the vault folder and paste:
+
+```
+Update my second brain with https://github.com/rodolfoburque/aios-second-brain/blob/main/UPDATE.md
+```
+
+What changed in each version is in [.github/CHANGELOG.md](.github/CHANGELOG.md).
+
 ## Requirements
 
 | Tool | Why |

@@ -36,6 +36,14 @@ As instruções que a IA segue estão no [README em inglês](../README.md), no b
 
 São 4 comandos, a skill de ingestão e os hooks. A lista completa fica em `AIOS/index.md` depois de instalar.
 
+## Atualizar um vault já instalado
+
+O vault instalado é desligado deste repositório, então correção não chega por `git pull`. Abra o Claude Code dentro da pasta do vault e cole:
+
+```
+Atualize o meu segundo cérebro com https://github.com/rodolfoburque/aios-second-brain/blob/main/UPDATE.md
+```
+
 ## Requisitos
 
 Claude Code, Obsidian, Git e Python 3. Provado no Windows 11. No macOS e no Linux vale o arquivo de configuração padrão; se algo falhar, abra uma issue com a saída do `test-hooks.py`.

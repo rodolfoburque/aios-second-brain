@@ -36,8 +36,6 @@ See also `AIOS/guardrails.md`.
 
 -
 
-## Permanent corrections
+## Corrections
 
-Every time I correct the AI's behavior, the correction goes here with the date and the reason.
-
--
+Corrections to the AI's behavior do not live in this file: each one is a line in [[conduct]], which is loaded whole into every session.

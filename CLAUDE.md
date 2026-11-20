@@ -13,6 +13,10 @@ Read, in this order:
 
 The `SessionStart` hook injects identity and the latest daily note automatically. If that block did not arrive in context, read the files above yourself.
 
+Corrections from the vault owner, one line each, are loaded whole here:
+
+@AIOS/conduct.md
+
 ## Maps (load on demand)
 
 | I need | I read |
@@ -34,7 +38,7 @@ Each rule carries its reason. A new rule enters here only when a real mistake ju
 - **Never ask permission to save**: save and say where. <!-- asking permission for every note is friction; the vault exists to keep things -->
 - **Empty is honest**: a section with nothing real says so in one line. What has not been validated does not become the foundation of a new piece or of a claim made to the outside. <!-- a gap filled with invention costs more than a declared gap -->
 - **An integration is proven with a real read, never with its declared status**, before scheduling a routine or saying it is up. <!-- a "connected" panel and an empty success response both mislead -->
-- A correction from the vault owner becomes a permanent rule on the spot: a skill mistake goes into the skill; general behavior goes into `02 Context/me.md`. <!-- a correction that stays only in the chat repeats in the next session -->
+- A correction from the vault owner becomes a permanent rule on the spot: a skill mistake goes into the skill; general behavior becomes one line in `AIOS/conduct.md`, which is loaded whole into every session. Never in `02 Context/me.md`. <!-- the session start only loads the beginning of me.md; a correction stored at its end stopped applying without warning -->
 - Substantive work produces a **numbered log** in `03 Projects/<Project>/logs/NNN-slug.md`, or in `AIOS/logs/` when the work is on the system itself. The daily note keeps the narrative and the decision; the log keeps the reproducible detail. <!-- the daily note answers "what happened that day", not "what happened in this project" -->
 - A secret or token never goes in a versioned file or in a vault note. <!-- a hook blocks the commit, but the rule comes before the hook -->
 - Nothing is declared done without running the verification in `AIOS/verification.md` and showing the output; configuration state does not prove that something works. <!-- "active" on a panel is not the same as working -->

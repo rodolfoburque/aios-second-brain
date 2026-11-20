@@ -53,7 +53,7 @@ Every path this skill touches. Read live on every run, never from a copy.
 |---|---|
 | Overwriting a file that already exists | No one. The operation is append, always |
 | New content inside `02 Context/` | The vault owner. Ingest only adds the wikilink, it never rewrites context |
-| `02 Context/me.md` | Only an explicit correction from the vault owner, at the moment they give it |
+| `AIOS/conduct.md` and `02 Context/me.md` | Only an explicit correction from the vault owner, at the moment they give it: one line in `conduct.md`, which is loaded into every session |
 | A rule, map or guardrail in `AIOS/` | The vault owner; a skill correction goes IN the skill (rule 5 of [[operating-rules]]) |
 | A numbered log in `logs/` | Whoever did the substantive work |
 | A skill reference card in `04 Resources/tools/` | The install flow of the skill |

@@ -308,6 +308,6 @@ When the user asks for a style, apply it starting with the next answer. The rule
 - Always auto-save. Never ask permission.
 - Use `[[wikilinks]]` for every internal reference to other notes.
 - Frontmatter on every file you create: `type`, `date`, `status`, `tags`.
-- If the user corrects you, save the correction as a rule in `02 Context/me.md`.
+- If the user corrects you, save the correction right away as one line in `AIOS/conduct.md`, which is loaded into every session.
 - Do not invent. If you do not know, say "no data" or ask.
 - Work on the vault silently. Short confirmation at the end.

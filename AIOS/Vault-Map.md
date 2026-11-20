@@ -144,6 +144,7 @@ Portable layer. This folder is the operating brain that does not depend on any t
 - `index.md`: Catalog of skills and maps
 - `Vault-Map.md`: This file
 - `operating-rules.md`: How the AI should behave
+- `conduct.md`: Corrections from the vault owner, one line each; loaded whole into every session
 - `knowledge-routing.md`: Where to route each type of information
 - `project-map.md`: Map of active projects
 - `open-loops.md`: What is waiting on a decision or a trigger
